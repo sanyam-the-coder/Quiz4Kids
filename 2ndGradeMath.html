@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h3 {
+                color: darkblue;
+                font-size: 34px;
+            }
+    
+            p {
+                color: purple;
+                font-size: 24px;
+                font-weight: bold;
+            }
+    
+            body {
+                background-color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Question 1</h3>
+        <p>What is 2x2?<br>A. <span id="optionA">7</span><br>B. <span id="optionB">4</span><br>C. <span id="optionC">9</span><br>D. <span id="optionD">3</span></p>
+
+        <script>
+            function checkAnswer(selectedOption) {
+                var correctAnswer = "B";
+
+                if (selectedOption === correctAnswer) {
+                    alert("Correct!");
+                } else {
+                    alert("Wrong! Please Try Again.");
+                }
+            }
+
+            document.getElementById("optionA").addEventListener("click", function() {
+                checkAnswer("A");
+            });
+
+            document.getElementById("optionB").addEventListener("click", function() {
+                checkAnswer("B");
+            });
+
+            document.getElementById("optionC").addEventListener("click", function() {
+                checkAnswer("C");
+            });
+
+            document.getElementById("optionD").addEventListener("click", function() {
+                checkAnswer("D");
+            });
+        </script>    
+    </body>
+</html>

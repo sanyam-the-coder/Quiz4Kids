@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h3 {
+                color: darkblue;
+                font-size: 34px;
+            }
+    
+            p {
+                color: purple;
+                font-size: 24px;
+                font-weight: bold;
+            }
+    
+            body {
+                background-color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Question 1</h3>
+        <p>How many planets are in the solar system?<br>A. <span id="optionA">8</span><br>B. <span id="optionB">9</span><br>C. <span id="optionC">7</span><br>D. <span id="optionD">5</span></p>
+        
+        <script>
+            function checkAnswer(selectedOption) {
+                var correctAnswer = "A";
+
+                if (selectedOption === correctAnswer) {
+                    alert("Correct!");
+                } else {
+                    alert("Wrong! Please Try Again.");
+                }
+            }
+
+            document.getElementById("optionA").addEventListener("click", function() {
+                checkAnswer("A");
+            });
+
+            document.getElementById("optionB").addEventListener("click", function() {
+                checkAnswer("B");
+            });
+
+            document.getElementById("optionC").addEventListener("click", function() {
+                checkAnswer("C");
+            });
+
+            document.getElementById("optionD").addEventListener("click", function() {
+                checkAnswer("D");
+            });
+        </script>
+    </body>
+</html>

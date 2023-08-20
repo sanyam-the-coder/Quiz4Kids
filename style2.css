@@ -1,0 +1,39 @@
+html {
+    background-color: lightgreen;
+    height: 100%;
+    width: 100%;
+  }
+
+  header {
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-text {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    max-width: 100%;
+}
