@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            h3 {
-                color: darkblue;
-                font-size: 34px;
-            }
-    
-            p {
-                color: purple;
-                font-size: 24px;
-                font-weight: bold;
-            }
-    
-            body {
-                background-color: gold;
-            }
-        </style>
-    </head>
-    <body>
-        <h3>Question 1</h3>
-        <p>What is the thickest layer in the atmosphere?<br>A. <span id="optionA">Troposphere</span><br>B. <span id="optionB">Stratosphere</span><br>C. <span id="optionC">Exosphere</span><br>D. <span id="optionD">Mesosphere</span></p>
-        
-        <script>
-            function checkAnswer(selectedOption) {
-                var correctAnswer = "C";
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Question 1</h3>
+    <p>
+      What is the thickest layer in the atmosphere?<br />A.
+      <span id="optionA">Troposphere</span><br />B.
+      <span id="optionB">Stratosphere</span><br />C.
+      <span id="optionC">Exosphere</span><br />D.
+      <span id="optionD">Mesosphere</span>
+    </p>
 
-                if (selectedOption === correctAnswer) {
-                    alert("Correct!");
-                } else {
-                    alert("Wrong! Please Try Again.");
-                }
-            }
+    <script>
+      function checkAnswer(selectedOption) {
+        var correctAnswer = "C";
 
-            document.getElementById("optionA").addEventListener("click", function() {
-                checkAnswer("A");
-            });
+        if (selectedOption === correctAnswer) {
+          alert("Correct!");
+        } else {
+          alert("Wrong! Please Try Again.");
+        }
+      }
 
-            document.getElementById("optionB").addEventListener("click", function() {
-                checkAnswer("B");
-            });
+      document.getElementById("optionA").addEventListener("click", function () {
+        checkAnswer("A");
+      });
 
-            document.getElementById("optionC").addEventListener("click", function() {
-                checkAnswer("C");
-            });
+      document.getElementById("optionB").addEventListener("click", function () {
+        checkAnswer("B");
+      });
 
-            document.getElementById("optionD").addEventListener("click", function() {
-                checkAnswer("D");
-            });
-        </script>
-    </body>
+      document.getElementById("optionC").addEventListener("click", function () {
+        checkAnswer("C");
+      });
+
+      document.getElementById("optionD").addEventListener("click", function () {
+        checkAnswer("D");
+      });
+    </script>
+  </body>
 </html>
